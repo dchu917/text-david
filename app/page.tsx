@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
+import Link from "next/link";
 
 interface Typo {
   at: number;
@@ -333,25 +334,57 @@ export default function Home() {
   return (
     <div className="flex h-screen bg-white">
       {/* Mobile — Text David landing */}
-      <div className="flex flex-1 flex-col items-center justify-center bg-white md:hidden">
-        <div className="flex flex-1 flex-col items-center justify-center">
-          <h1 className="font-display text-6xl tracking-tight text-black">
+      <div className="flex flex-1 flex-col bg-white md:hidden">
+        {/* Header */}
+        <div className="flex flex-col items-center pt-16 pb-6">
+          <h1 className="font-display text-5xl tracking-tight text-black">
             Text David.
           </h1>
-          <p className="mt-4 text-lg tracking-wide text-[#8e8e93]">
+          <p className="mt-3 text-[15px] tracking-wide text-[#8e8e93]">
             (630) 290-8039
           </p>
         </div>
-        <div className="w-full px-6 pb-10">
+
+        {/* Chat preview */}
+        <div className="flex flex-1 flex-col justify-center gap-3 px-5 py-4">
+          <div className="flex justify-end pr-2 mobile-bubble-1">
+            <div className="bubble-sent">
+              yo 5299 apparently said poke is weird. u got anything to say about that
+            </div>
+          </div>
+          <div className="flex justify-start pl-2 mobile-bubble-2">
+            <div className="bubble-received">
+              lol 0115 nice try stirring the pot. 5299 and poke can sort out their beef themselves
+            </div>
+          </div>
+          <div className="flex justify-end pr-2 mobile-bubble-3">
+            <div className="bubble-sent">
+              5299 really out here calling me weird when they prob still use comic sans unironically
+            </div>
+          </div>
+          <div className="flex justify-start pl-2 mobile-bubble-4">
+            <div className="bubble-received">
+              ohhh poke coming in hot with the font shame. comic sans is a deep cut 🔥
+            </div>
+          </div>
+          {/* Fade overlay at bottom of chat */}
+          <div className="pointer-events-none h-12 bg-gradient-to-t from-white to-transparent -mt-12 relative z-10" />
+        </div>
+
+        {/* CTA area */}
+        <div className="shrink-0 px-6 pb-10 pt-2">
           <a
             href="sms:6302908039"
-            className="flex w-full items-center justify-center gap-2.5 rounded-full bg-[#007aff] py-4 text-[17px] font-semibold text-white transition active:scale-[0.98]"
+            className="flex w-full items-center justify-center gap-2.5 rounded-full bg-[#007aff] py-4 text-[17px] font-semibold text-white shadow-lg shadow-blue-500/25 transition active:scale-[0.98]"
           >
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
               <path d="M12 2C6.477 2 2 5.813 2 10.5c0 2.51 1.327 4.758 3.414 6.319-.2 1.387-.753 2.61-1.414 3.181 0 0 2.6-.2 4.6-1.6.88.2 1.8.3 2.8.3h.6c5.523 0 10-3.813 10-8.5S17.523 2 12 2Z" fill="white"/>
             </svg>
             Send a Message
           </a>
+          <p className="mt-3 text-center text-[13px] text-[#8e8e93]">
+            iMessage &middot; SMS
+          </p>
         </div>
       </div>
 
@@ -532,22 +565,29 @@ export default function Home() {
       </div>
 
       {/* Right side — Text David */}
-      <div className="hidden flex-1 flex-col items-center justify-center bg-white md:flex">
-        <h1 className="font-display text-7xl tracking-tight text-black lg:text-8xl">
-          Text David.
-        </h1>
-        <p className="mt-4 text-lg tracking-wide text-[#8e8e93]">
-          (630) 290-8039
-        </p>
-        <a
-          href="sms:6302908039"
-          className="mt-6 flex items-center gap-2.5 rounded-full bg-[#007aff] py-3 pl-6 pr-8 text-[17px] font-semibold text-white transition hover:brightness-110 active:scale-95"
-        >
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <path d="M12 2C6.477 2 2 5.813 2 10.5c0 2.51 1.327 4.758 3.414 6.319-.2 1.387-.753 2.61-1.414 3.181 0 0 2.6-.2 4.6-1.6.88.2 1.8.3 2.8.3h.6c5.523 0 10-3.813 10-8.5S17.523 2 12 2Z" fill="white"/>
-          </svg>
-          Send a Message
-        </a>
+      <div className="hidden flex-1 flex-col items-center justify-center bg-white md:flex relative">
+        <div className="flex flex-col items-center">
+          <h1 className="font-display text-7xl tracking-tight text-black lg:text-8xl">
+            Text David.
+          </h1>
+          <p className="mt-4 text-lg tracking-wide text-[#8e8e93]">
+            (630) 290-8039
+          </p>
+          <a
+            href="sms:6302908039"
+            className="mt-6 flex items-center gap-2.5 rounded-full bg-[#007aff] py-3 pl-6 pr-8 text-[17px] font-semibold text-white transition hover:brightness-110 active:scale-95"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2C6.477 2 2 5.813 2 10.5c0 2.51 1.327 4.758 3.414 6.319-.2 1.387-.753 2.61-1.414 3.181 0 0 2.6-.2 4.6-1.6.88.2 1.8.3 2.8.3h.6c5.523 0 10-3.813 10-8.5S17.523 2 12 2Z" fill="white"/>
+            </svg>
+            Send a Message
+          </a>
+        </div>
+        <div className="absolute bottom-6 flex gap-4 text-[13px] text-[#8e8e93]">
+          <Link href="/privacy-policy" className="hover:text-black transition-colors">Privacy</Link>
+          <Link href="/terms-of-service" className="hover:text-black transition-colors">Terms</Link>
+          <Link href="/eula" className="hover:text-black transition-colors">EULA</Link>
+        </div>
       </div>
     </div>
   );
