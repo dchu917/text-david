@@ -8,7 +8,10 @@ export default function LegalLayout({
   return (
     <div className="min-h-screen bg-white">
       <header className="border-b border-black/5 px-6 py-4">
-        <Link href="/" className="font-display text-xl tracking-tight text-black">
+        <Link
+          href="/"
+          className="font-display text-xl tracking-tight text-black"
+        >
           Text David.
         </Link>
       </header>
@@ -19,10 +22,27 @@ export default function LegalLayout({
       </main>
       <footer className="border-t border-black/5 py-6">
         <div className="flex flex-wrap justify-center items-center gap-4 text-sm text-[#8e8e93] px-6">
-          <Link href="/privacy-policy" className="hover:text-black transition-colors">Privacy</Link>
-          <Link href="/terms-of-service" className="hover:text-black transition-colors">Terms</Link>
-          <Link href="/eula" className="hover:text-black transition-colors">EULA</Link>
-          <a href="mailto:founders@manaflow.com" className="hover:text-black transition-colors">Contact</a>
+          <Link
+            href="/privacy-policy"
+            className="hover:text-black transition-colors"
+          >
+            Privacy
+          </Link>
+          <Link
+            href="/terms-of-service"
+            className="hover:text-black transition-colors"
+          >
+            Terms
+          </Link>
+          <Link href="/eula" className="hover:text-black transition-colors">
+            EULA
+          </Link>
+          <a
+            href="mailto:founders@manaflow.com"
+            className="hover:text-black transition-colors"
+          >
+            Contact
+          </a>
         </div>
       </footer>
     </div>

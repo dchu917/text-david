@@ -20,17 +20,17 @@ export default function PrivacyPolicyPage() {
       <p>
         For purposes of this policy, &ldquo;Site&rdquo; refers to the
         Company&rsquo;s website at{" "}
-        <a href="https://textdavid.com">textdavid.com</a>.
-        &ldquo;Service&rdquo; refers to the David AI messaging assistant,
-        accessible via iMessage, and the Site collectively. The terms
-        &ldquo;we,&rdquo; &ldquo;us,&rdquo; and &ldquo;our&rdquo; refer to the
-        Company. &ldquo;You&rdquo; refers to you, as a user of our Service.
+        <a href="https://textdavid.com">textdavid.com</a>. &ldquo;Service&rdquo;
+        refers to the David AI messaging assistant, accessible via iMessage, and
+        the Site collectively. The terms &ldquo;we,&rdquo; &ldquo;us,&rdquo; and
+        &ldquo;our&rdquo; refer to the Company. &ldquo;You&rdquo; refers to you,
+        as a user of our Service.
       </p>
       <p>
         By using our Service, you accept this Privacy Policy and our{" "}
-        <a href="/terms-of-service">Terms of Service</a>, and you consent to
-        our collection, storage, use and disclosure of your information as
-        described here.
+        <a href="/terms-of-service">Terms of Service</a>, and you consent to our
+        collection, storage, use and disclosure of your information as described
+        here.
       </p>
 
       <h2>I. Information We Collect</h2>
@@ -44,9 +44,7 @@ export default function PrivacyPolicyPage() {
       </p>
 
       <h3>1. Information collected automatically</h3>
-      <p>
-        When you use the Service, we automatically collect:
-      </p>
+      <p>When you use the Service, we automatically collect:</p>
       <ul>
         <li>Your phone number (to identify you and deliver responses)</li>
         <li>Message content you send to the Service</li>
@@ -60,14 +58,19 @@ export default function PrivacyPolicyPage() {
         access:
       </p>
       <ul>
-        <li>Google Calendar events (to read and create events on your behalf)</li>
-        <li>Gmail messages (to search, read, send, and draft emails on your behalf)</li>
+        <li>
+          Google Calendar events (to read and create events on your behalf)
+        </li>
+        <li>
+          Gmail messages (to search, read, send, and draft emails on your
+          behalf)
+        </li>
         <li>Google Contacts (to search your contacts)</li>
         <li>OAuth tokens (securely stored to maintain your connection)</li>
       </ul>
       <p>
-        You can revoke access to connected accounts at any time by contacting
-        us or revoking permissions through the third-party service.
+        You can revoke access to connected accounts at any time by contacting us
+        or revoking permissions through the third-party service.
       </p>
 
       <h3>3. Information you provide directly</h3>
@@ -114,14 +117,14 @@ export default function PrivacyPolicyPage() {
       </p>
 
       <h2>III. How We Use and Share Information</h2>
-      <p>
-        We use your information to:
-      </p>
+      <p>We use your information to:</p>
       <ul>
         <li>Provide and improve the Service</li>
         <li>Process your messages and generate AI responses</li>
         <li>Maintain conversation context for future interactions</li>
-        <li>Execute actions on connected third-party services at your request</li>
+        <li>
+          Execute actions on connected third-party services at your request
+        </li>
       </ul>
       <p>
         We do not sell, trade, rent or otherwise share your Personal Information
@@ -173,8 +176,7 @@ export default function PrivacyPolicyPage() {
       <h2>VIII. Contact Us</h2>
       <p>
         If you have any questions regarding this Privacy Policy, please contact
-        us at{" "}
-        <a href="mailto:founders@manaflow.com">founders@manaflow.com</a>.
+        us at <a href="mailto:founders@manaflow.com">founders@manaflow.com</a>.
       </p>
 
       <h2>IX. Data Retention</h2>

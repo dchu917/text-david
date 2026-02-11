@@ -107,9 +107,9 @@ export default function EulaPage() {
         You.
       </p>
       <p>
-        The Company may update the Service&rsquo;s capabilities, features, or
-        AI models at any time. You agree that all updates are subject to the
-        terms of this Agreement.
+        The Company may update the Service&rsquo;s capabilities, features, or AI
+        models at any time. You agree that all updates are subject to the terms
+        of this Agreement.
       </p>
 
       <h2>Third-Party Services</h2>

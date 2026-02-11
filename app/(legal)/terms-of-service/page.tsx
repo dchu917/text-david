@@ -12,9 +12,8 @@ export default function TermsOfServicePage() {
       <p>Last revised on: February 10, 2026</p>
 
       <p>
-        The website located at{" "}
-        <a href="https://textdavid.com">textdavid.com</a> (the
-        &ldquo;Site&rdquo;) and the David AI messaging service (the
+        The website located at <a href="https://textdavid.com">textdavid.com</a>{" "}
+        (the &ldquo;Site&rdquo;) and the David AI messaging service (the
         &ldquo;Service&rdquo;) are copyrighted works belonging to Manaflow
         (&ldquo;Company&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;, and
         &ldquo;we&rdquo;). These Terms of Use (these &ldquo;Terms&rdquo;) set
@@ -48,7 +47,9 @@ export default function TermsOfServicePage() {
       </p>
 
       <h3>Restrictions</h3>
-      <p>The rights granted to you are subject to the following restrictions:</p>
+      <p>
+        The rights granted to you are subject to the following restrictions:
+      </p>
       <ul>
         <li>
           You shall not use the Service for any unlawful purpose or to send
